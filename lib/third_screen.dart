@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
 
-// class DetailPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       title: "New Scerrn",
-//       home: DetailYogaPage(),
-//     );
-//   }
-// }
-
 class DetailYogaPage extends StatefulWidget {
   @override
   _DetailYogaPageState createState() => _DetailYogaPageState();
@@ -27,10 +16,8 @@ class _DetailYogaPageState extends State<DetailYogaPage> {
             Container(
               height: 280,
               width: MediaQuery.of(context).size.width,
-              // child: Text("hi"),
               decoration: BoxDecoration(
                   color: Colors.lightGreen,
-                  // Fit:BoxFit.fill,
                   image: DecorationImage(
                       image: AssetImage("assets/images/yoga8.jpeg"),
                       fit: BoxFit.fill)),
@@ -41,20 +28,16 @@ class _DetailYogaPageState extends State<DetailYogaPage> {
               height: 70,
               decoration: BoxDecoration(
                 color: Color(0xfffcecf5),
-                //  color: Colors.lime,
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(color: Colors.grey),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                // crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Checkbox(
                       value: true,
                       activeColor: true ? Colors.green : Colors.red,
-                      onChanged: (bool value) {
-                        // value==true;
-                      }),
+                      onChanged: (bool value) {}),
                   Text(
                     "\$${10.0} / Month",
                     style: TextStyle(fontSize: 22),
@@ -85,8 +68,7 @@ class _DetailYogaPageState extends State<DetailYogaPage> {
                   Checkbox(
                       value: false,
                       activeColor: true ? Colors.green : Colors.red,
-                      onChanged: (bool value) {
-                      }),
+                      onChanged: (bool value) {}),
                   Text(
                     "\$${56.0} / Month",
                     style: TextStyle(fontSize: 22),
@@ -106,10 +88,12 @@ class _DetailYogaPageState extends State<DetailYogaPage> {
             SizedBox(
               height: 55,
               width: 290,
-                          child: RaisedButton(
+              child: RaisedButton(
                 onPressed: () => debugPrint("press"),
-                child: Text("Purchase", style: TextStyle(color: Colors.white,
-                fontSize: 25),),
+                child: Text(
+                  "Purchase",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
                 color: Color(0xfff47a7b),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),

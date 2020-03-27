@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:yoga_ui/second_screen.dart';
+import 'newScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,17 +25,12 @@ class _YogaPageState extends State<YogaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //  backgroundColor:Colors.brown,
-      //   title:Text("YOGA")
-      // ),
       body: SafeArea(
           child: ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
           Container(
             height: 120,
-            // width: 250,
             color: Colors.white,
             child: Padding(
               padding: const EdgeInsets.only(top: 30, right: 45),
@@ -68,7 +63,7 @@ class _YogaPageState extends State<YogaPage> {
                 boxFit: BoxFit.fill,
                 dotBgColor: Colors.transparent,
                 dotIncreasedColor: Colors.pink[300],
-                dotColor: Colors.pink[200],
+                dotColor: Colors.pink[100],
                 dotSize: 5,
                 dotIncreaseSize: 2,
                 dotPosition: DotPosition.bottomCenter,
@@ -80,11 +75,8 @@ class _YogaPageState extends State<YogaPage> {
                   AssetImage("assets/images/yoga5.jpeg")
                 ],
               )),
-          SizedBox(
-            height: 50,
-          ),
+          SizedBox(height: 50),
           Container(
-              // color: Colors.amber,
               child: Column(
             children: <Widget>[
               SizedBox(
@@ -95,7 +87,7 @@ class _YogaPageState extends State<YogaPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => YogaDetailPage()));
+                            builder: (context) => NewYogaDetailPage()));
                   },
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
