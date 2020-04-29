@@ -92,7 +92,7 @@ class _NewYogaDetailPageState extends State<NewYogaDetailPage> {
           child: ListView(
         children: <Widget>[
           Container(
-            height: 300,
+            height: 280,
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
