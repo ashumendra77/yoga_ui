@@ -1,7 +1,5 @@
-# yoga_ui
+# Yoga_Ui
 
-A new Flutter project.
 
-## Getting Started
 
-<img src="yoga1.jpg" width="40%" height="40%"> <img src="yoga2.jpg" width="40%" height="40%"> <img src="yoga3.jpg" width="40%" height="40%">
+<img src="yoga1.jpg" width="30%" height="40%"> <img src="yoga2.jpg" width="30%" height="40%"> <img src="yoga3.jpg" width="30%" height="40%">
