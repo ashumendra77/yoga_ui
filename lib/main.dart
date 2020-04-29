@@ -79,7 +79,7 @@ class _YogaPageState extends State<YogaPage> {
           Container(
               child: Column(
             children: <Widget>[
-              SizedBox(
+              Container(
                 height: 50,
                 width: 250,
                 child: RaisedButton(
@@ -99,7 +99,8 @@ class _YogaPageState extends State<YogaPage> {
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
-              )
+              ),
+              SizedBox(height: 10)
             ],
           ))
         ],
